@@ -1,3 +1,7 @@
+
+
+
+import json
 {% load static %}
 <!DOCTYPE html>
 <html>
@@ -38,14 +42,14 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                Create Post
+                Create Music
             </a>
                 <a href="{% url 'profile' %}" id="auth-links">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Profile
+                User Profile
             </a>
                 <a href="{% url 'logout' %}" id="auth-links">
                 <span></span>
@@ -108,32 +112,32 @@
               </ul>
             </p> -->
             <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;" style="padding-top: 120px;">
-                <a id="list-group" style="text-decoration: none;" href="" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                {% comment %} <a id="list-group" style="text-decoration: none;" href="" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"> {% endcomment %}
                   <!-- <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg> -->
-                  <span class="fs-5 fw-semibold" id="gist-btn">Latest Gist</span>
-                </a>
+                  {% comment %} <span class="fs-5 fw-semibold" id="gist-btn">Latest </span>
+                </a> {% endcomment %}
                 <div class="list-group list-group-flush border-bottom scrollarea">
                   <a href="#" class="list-group-item list-group-item-action  lh-tight" aria-current="true">
                     <div class="d-flex w-100 align-items-center justify-content-between">
-                      <strong class="mb-1">Seriously, Stop Trying to Teach Toddlers How to Code...By Desphixs
+                      <strong class="mb-1">Seriously, Providing a platform for people to collaborate coded musics...By Promusic
                     </strong>
                       <small>Wed</small>
                     </div>
-                    <div class="col-10 mb-1 small">AS A BABY nerd, I was obsessed with Hackers. The 1995 cult movie... </div>
+                    <div class="col-10 mb-1 small">AS A BABY nerd, I was obsessed with Music. The 1995 Amapiano... </div>
                   </a>
                   <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
                     <div class="d-flex w-100 align-items-center justify-content-between">
-                      <strong class="mb-1">Its not a bug - It's a feature... by Desphixs</strong>
+                      <strong class="mb-1">Its not a boring- It's a Good Music... by Promusic</strong>
                       <small class="text-muted">Tues</small>
                     </div>
-                    <div class="col-10 mb-1 small">When it comes to coding, everything works like a miracle, let me use that word...hahaha</div>
+                    <div class="col-10 mb-1 small">When it comes to Music, everything is fun, let me use that word...hahaha</div>
                   </a>
                   <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
                     <div class="d-flex w-100 align-items-center justify-content-between">
-                      <strong class="mb-1">I wanted to be a great programmer but...by Desphixs</strong>
+                      <strong class="mb-1">I wanted to be a great Musician but...by Promusic</strong>
                       <small class="text-muted">Mon</small>
                     </div>
-                    <div class="col-10 mb-1 small">in my family trait, nobody knows anything about computers and i wanted to be the greatest computer scientist ever and...</div>
+                    <div class="col-10 mb-1 small">in my family trait, they love music alot, wanted to be the greatest Musicians scientist ever and...</div>
                   </a>
 
                 </div>
@@ -149,10 +153,10 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
             <li class="nav-item"><a href="admin/" class="nav-link px-2 text-muted">Admin</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="https://sonic-pi.net/" class="nav-link px-2 text-muted">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
           </ul>
-          <p class="text-center text-muted">&copy; Desphixs 2021</p>
+          <p class="text-center text-muted">&copy; Promusic 2021</p>
         </footer>
 
     </main>
